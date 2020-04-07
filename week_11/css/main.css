@@ -1,0 +1,82 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw; 
+min-height: 100vh;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: grid;
+grid-template-columns: auto;
+grid-template-rows: repeat(8, auto);
+grid-gap: 15px;
+grid-template-areas:
+    "head"
+    "s1"
+    "s2"
+    "s3"
+    "s4"
+    "s5"
+    "s6"
+    "foot";
+padding: 20px;
+background-color: #000;
+
+}
+
+header { grid-area: head;}
+#s1 {grid-area: s1;}
+#s2 {grid-area: s2;}
+#s3 {grid-area: s3;}
+#s4 {grid-area: s4;}
+#s5 {grid-area: s5;}
+#s6 {grid-area: s6;}
+footer{grid-area: foot;}
+
+header,div,footer{
+    border-radius: 10px;
+    margin: 20px;
+    max-height: 70px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1, p{
+    text-align: center;
+
+}
+
+div{
+    font-size: 250%;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 24px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5 1fr);
+        grid-template-areas:
+        "head head"
+        "s1 s2"
+        "s5 s6"
+        "s3 s4"
+        "foot foot";
+    }
+    
+}
