@@ -1,0 +1,42 @@
+
+
+
+
+body{
+    background-color:black;
+}
+body{
+    color: white;
+}
+
+header{
+
+}
+
+.picture{
+width: 365px;
+height: 225px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:100px%;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+
+.p {
+    font-size: 5%;
+}
